@@ -11,6 +11,14 @@
 
 빌드 도구 없이 바로 실행됩니다.
 
+### GitHub Pages 배포
+
+저장소에 GitHub Actions 워크플로가 포함되어 있습니다. 최초 1회 아래 설정이 필요할 수 있습니다.
+
+1. [저장소 Settings → Pages](https://github.com/june-yang-ai/tetris/settings/pages)
+2. **Build and deployment** → Source: **GitHub Actions**
+3. 워크플로 완료 후 `https://june-yang-ai.github.io/tetris/` 에서 플레이
+
 ## 조작법
 
 | 키 | 동작 |
