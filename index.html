@@ -14,7 +14,8 @@
         <div id="game-board" class="board" aria-label="테트리스 보드"></div>
         <div id="game-over" class="overlay hidden" aria-hidden="true">
           <p class="overlay-title">GAME OVER</p>
-          <p class="overlay-hint">R키로 재시작</p>
+          <p class="overlay-hint">재시작 버튼 또는 R키</p>
+          <button id="btn-restart-overlay" class="game-btn" type="button">재시작</button>
         </div>
         <div id="paused" class="overlay hidden" aria-hidden="true">
           <p class="overlay-title">PAUSED</p>
@@ -22,6 +23,10 @@
         </div>
       </div>
       <aside class="side-panel">
+        <div class="button-group">
+          <button id="btn-start" class="game-btn" type="button">시작</button>
+          <button id="btn-restart" class="game-btn" type="button" disabled>재시작</button>
+        </div>
         <div class="stat-box">
           <h2>점수</h2>
           <p id="score">0</p>
@@ -41,12 +46,11 @@
         <div class="controls-help">
           <h2>조작</h2>
           <ul>
-            <li>← → : 이동</li>
-            <li>↑ : 회전</li>
-            <li>↓ : 소프트 드롭</li>
-            <li>Space : 하드 드롭</li>
-            <li>P : 일시정지</li>
-            <li>R : 재시작</li>
+            <li>ArrowLeft : 왼쪽 이동</li>
+            <li>ArrowRight : 오른쪽 이동</li>
+            <li>ArrowDown : 한 칸 빠르게 내리기</li>
+            <li>ArrowUp : 회전</li>
+            <li>Space : hard drop</li>
           </ul>
         </div>
       </aside>
