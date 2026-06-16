@@ -349,6 +349,9 @@ function tick(delta) {
 }
 
 function gameLoop(time = 0) {
+  if (lastTime === 0) {
+    lastTime = time;
+  }
   const delta = time - lastTime;
   lastTime = time;
   tick(delta);
